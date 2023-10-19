@@ -1,0 +1,22 @@
+15. ให้ใช้ ชุด api จาก 14.1 พัฒนา web application พร้อม UI  ดังนี้
+15.1 เรียกใช้ devicelist (GET) แสดงรายการสินค้า
+15.2 เรียกใช้  SearchDevice (PUT) เพื่อค้นหา รหัสอุปกรณ์, ชื่ออุปกรณ์ และซีเรียล  โดยมี body  {
+    device_id  ,
+    device_name  ,
+    serial_no  
+}
+15.3 เรียกใช้  UpdateDevice (PUT) เพื่อแก้ไขชื่ออุปกรณ์ (device_name)  โดยมี body 
+{
+    device_id  ระบุรหัสอุปกรณ์,
+    device_name  
+}
+15.3 เรียกใช้ DeleteDevice (PUT) เพื่อลบข้อมูลอุปกรณ์ โดยมี body 
+{
+    device_id  ระบุรหัสอุปกรณ์
+}
+15.4 เรียกใช้ Device (POST) เพื่อเพิ่มข้อมูลรหัสอุปกรณ์ ,ชื่ออุปกรณ์ และ เลขซีเรียล โดยมี body  
+{
+        device_id รหัสอุปกรณ์,
+        device_name ชื่ออุปกรณ์,
+        serial_no .เลขซีเรียล
+}
